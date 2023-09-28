@@ -205,20 +205,23 @@
                   </ul> 
 
                   </style> 
-                  <div id="pages"> <span id="spanFirst">首页</span> <span id="spanPre">上一页</span> <span id="spanNext">下一页</span> <span id="spanLast">尾页</span> 第<strong id="spanPageNum"></strong>页/共<strong id="spanTotalPage"></strong>页 </div> 
+
+                  <center>
+                  <div id="pages"> <span id="spanFirst">First</span> <span id="spanPre">Prev</span> <span id="spanNext">Next</span> <span id="spanLast">尾页</span> <strong id="spanPageNum"></strong>/<strong id="spanTotalPage"></strong> </div> 
+                </center>
                   <script type="text/javascript"> 
                   var theUL = document.getElementById("pageContent"); 
                   var totalPage = document.getElementById("spanTotalPage"); 
                   var pageNum = document.getElementById("spanPageNum"); //获取当前页<span> 
-                  var spanPre = document.getElementById("spanPre"); //获取上一页<span> 
-                  var spanNext = document.getElementById("spanNext"); //获取下一页<span> 
+                  var spanPre = document.getElementById("spanPre"); //获取Prev<span> 
+                  var spanNext = document.getElementById("spanNext"); //获取Next<span> 
                   var spanFirst = document.getElementById("spanFirst"); //获取第一页<span> 
                   var spanLast = document.getElementById("spanLast"); //获取最后一页<span> 
                   var numberRowsInTable = theUL.getElementsByTagName("li").length; //记录总条数 
                   var pageSize = 8; //每页显示的记录条数 
                   var page = 1; //当前页，默认第一页 
                   
-                  //下一页 
+                  //Next 
                   function next(){ 
                   hideTable(); 
                   currentRow = pageSize * page; 
@@ -237,7 +240,7 @@
                   firstLink(); 
                   } 
                   
-                  //上一页 
+                  //Prev 
                   function pre(){ 
                   hideTable(); 
                   page--; 
@@ -301,28 +304,28 @@
                   } 
                   //显示链接 
                   function preLink(){ 
-                  spanPre.innerHTML = "<a href='javascript:pre();'>上一页</a>"; 
+                  spanPre.innerHTML = "<a href='javascript:pre();'>Prev</a>"; 
                   } 
                   function preText(){ 
-                  spanPre.innerHTML = "上一页"; 
+                  spanPre.innerHTML = "Prev"; 
                   } 
                   function nextLink(){ 
-                  spanNext.innerHTML = "<a href='javascript:next();'>下一页</a>"; 
+                  spanNext.innerHTML = "<a href='javascript:next();'>Next</a>"; 
                   } 
                   function nextText(){ 
-                  spanNext.innerHTML = "下一页"; 
+                  spanNext.innerHTML = "Next"; 
                   } 
                   function firstLink(){ 
-                  spanFirst.innerHTML = "<a href='javascript:first();'>首页</a>"; 
+                  spanFirst.innerHTML = "<a href='javascript:first();'>First</a>"; 
                   } 
                   function firstText(){ 
-                  spanFirst.innerHTML = "首页"; 
+                  spanFirst.innerHTML = "First"; 
                   } 
                   function lastLink(){ 
-                  spanLast.innerHTML = "<a href='javascript:last();'>末页</a>"; 
+                  spanLast.innerHTML = "<a href='javascript:last();'>End</a>"; 
                   } 
                   function lastText(){ 
-                  spanLast.innerHTML = "末页"; 
+                  spanLast.innerHTML = "End"; 
                   } 
                   
                   //隐藏 
