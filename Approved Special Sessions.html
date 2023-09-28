@@ -95,82 +95,250 @@
                 <div class="box-gray alignleft box-white">
                   <h3>Approved Special Sessions                  </h3>
                   <p style="text-align: left">
+                    <ul id="pageContent"> 
                     <!-- <span class="style8">SS002: <a href="Special_Sessions/SS002_CFP.htm">Multi-coupling and Multi-time-scale Stability Analysis of DC Microgrid</a></span> -->
+                  <li>
                     <p style="color: #e92f2f">SS01: Security and Privacy in Assistive Autonomous and Robotic Systems</p>
                     <p style="color: #000000"></p>Session Chair: Dr.Jims Marchang </p>
                     <p style="color: #000000"></p>Co-chair: Prof.Alessandro Di Nuovo </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS02: Recent Advancements in AI/ML-Assisted Safety Strategies for Technical Processes</p>
                     <p style="color: #000000"></p>Session Chair: Shen Yin</p>
                     <p style="color: #000000"></p>Co-chair Yuchen Jiang</p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS03: Robot Learning and Compliant Interaction Control</p>
                     <p style="color: #000000"></p>Session Chair: Dr.Weiyong Si</p>
                     <p style="color: #000000"></p>Co-chair: Dr.Zhehao Jin</p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS04: Safe and Efficient Robot Interaction Planning, Control and Applications</p>
                     <p style="color: #000000"></p>Session Chair: Dr.Jing Luo</p>
                     <p style="color: #000000"></p>Co-chair: Dr.Chao Zeng, Dr.Yueyue Liu </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS05: Robotics for Society</p>
                     <p style="color: #000000"></p>Session Chair: Gilbert Tang</p>
                     <p style="color: #000000"></p>Co-chair: Rebecca Raper </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS06: Intelligent Robotics, Perception and Flexibility</p>
                     <p style="color: #000000"></p>Session Chair: Seemal Asif</p>
                     <p style="color: #000000"></p>Co-chair: Pedro Ferreria</p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS07: Robotics for Environment Monitoring and Information Gathering</p>
                     <p style="color: #000000"></p>Session Chair: Cunjia Liu</p>
                     <p style="color: #000000"></p>Co-chair: Hyondong Oh, Yuanchang Liu, Hyo-sang Shin </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS08: Advanced Technologies in Sensing, Robotics, and Automation for Smart Agriculture</p>
                     <p style="color: #000000"></p>Session Chair: Kang Liu</p>
                     <p style="color: #000000"></p>Co-chair: Lin Jiao, Yawei Zhang </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS09: Energy Optimization for Sustainable Manufacturing Robotics</p>
                     <p style="color: #000000"></p>Session Chair: William Holderbaum</p>
                     <p style="color: #000000"></p>Co-chair: Eileen Su Lee Ming, Mingyu Wu </p>
                     <br />
+                  </li>
 
+                  <li>
 		                <p style="color: #e92f2f">SS10: Advances in UAV Intelligent Systems</p>
                     <p style="color: #000000"></p>Session Chair: Steven Li</p>
                     <p style="color: #000000"></p>Co-chair: Juha Röning </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS11: Advanced Mechatronics for Offshore and Marine Systems</p>
                     <p style="color: #000000"></p>Session Chair: Jing Zhou </p>
                     <p style="color: #000000"></p>Co-chair: Houxiang Zhang </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS12: Advanced Robotic Manipulation</p>
                     <p style="color: #000000"></p>Session Chair: Jihong Zhu </p>
                     <p style="color: #000000"></p>Co-chair: Zhan Li </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS13: Smart and Sustainable Manufacturing</p>
                     <p style="color: #000000"></p>Session Chair: Yongjing Wang </p>
                     <p style="color: #000000"></p>Co-chair: John Oyekan, Efi Psomopoulou </p>
                     <br />
+                  </li>
 
+                  <li>
                     <p style="color: #e92f2f">SS14: Advanced Technologies in Power Electronics Converter</p>
                     <p style="color: #000000"></p>Session Chair: Liping Mo </p>
                     <p style="color: #000000"></p>Co-chair: Teng Long, Zheng Zeng, Chaoqiang Jiang </p>
                     <br />
+                  </li>
 			
+                  <li>
                     <p style="color: #e92f2f">SS15: Learning Enabled Advanced Control for Industrial Automation</p>
                     <p style="color: #000000"></p>Session Chair: Zhenhong Li </p>
                     <p style="color: #000000"></p>Co-chair: Kewei Xia, Zongyu Zuo </p>
                     <br />
+                  </li>
 			
+                  </ul> 
+
+                  </style> 
+                  <div id="pages"> <span id="spanFirst">首页</span> <span id="spanPre">上一页</span> <span id="spanNext">下一页</span> <span id="spanLast">尾页</span> 第<strong id="spanPageNum"></strong>页/共<strong id="spanTotalPage"></strong>页 </div> 
+                  <script type="text/javascript"> 
+                  var theUL = document.getElementById("pageContent"); 
+                  var totalPage = document.getElementById("spanTotalPage"); 
+                  var pageNum = document.getElementById("spanPageNum"); //获取当前页<span> 
+                  var spanPre = document.getElementById("spanPre"); //获取上一页<span> 
+                  var spanNext = document.getElementById("spanNext"); //获取下一页<span> 
+                  var spanFirst = document.getElementById("spanFirst"); //获取第一页<span> 
+                  var spanLast = document.getElementById("spanLast"); //获取最后一页<span> 
+                  var numberRowsInTable = theUL.getElementsByTagName("li").length; //记录总条数 
+                  var pageSize = 8; //每页显示的记录条数 
+                  var page = 1; //当前页，默认第一页 
+                  
+                  //下一页 
+                  function next(){ 
+                  hideTable(); 
+                  currentRow = pageSize * page; 
+                  maxRow = currentRow + pageSize; 
+                  if ( maxRow > numberRowsInTable ) maxRow = numberRowsInTable; 
+                  for ( var i = currentRow; i< maxRow; i++ ){ 
+                  theUL.getElementsByTagName("li")[i].style.display = ''; 
+                  } 
+                  page++; 
+                  if ( maxRow == numberRowsInTable ) { 
+                  nextText(); 
+                  lastText(); 
+                  } 
+                  showPage(); 
+                  preLink(); 
+                  firstLink(); 
+                  } 
+                  
+                  //上一页 
+                  function pre(){ 
+                  hideTable(); 
+                  page--; 
+                  currentRow = pageSize * page; 
+                  maxRow = currentRow - pageSize; 
+                  if ( currentRow > numberRowsInTable ) currentRow = numberRowsInTable; 
+                  for ( var i = maxRow; i< currentRow; i++ ){ 
+                  theUL.getElementsByTagName("li")[i].style.display = ''; 
+                  } 
+                  if ( maxRow == 0 ){ 
+                  preText(); 
+                  firstText(); 
+                  } 
+                  showPage(); 
+                  nextLink(); 
+                  lastLink(); 
+                  } 
+                  
+                  //第一页 
+                  function first(){ 
+                  hideTable(); 
+                  page = 1; 
+                  for ( var i = 0; i<pageSize; i++ ){ 
+                  theUL.getElementsByTagName("li")[i].style.display = ''; 
+                  } 
+                  showPage(); 
+                  firstText(); 
+                  preText(); 
+                  nextLink(); 
+                  lastLink(); 
+                  } 
+                  
+                  //最后一页 
+                  function last(){ 
+                  hideTable(); 
+                  page = pageCount(); 
+                  currentRow = pageSize * (page - 1); 
+                  for ( var i = currentRow; i<numberRowsInTable; i++ ){ 
+                  theUL.getElementsByTagName("li")[i].style.display = ''; 
+                  } 
+                  showPage(); 
+                  preLink(); 
+                  nextText(); 
+                  firstLink(); 
+                  lastText(); 
+                  } 
+                  
+                  function hideTable(){ 
+                  for ( var i = 0; i<numberRowsInTable; i++ ){ 
+                  theUL.getElementsByTagName("li")[i].style.display = 'none'; 
+                  } 
+                  } 
+                  
+                  function showPage(){ 
+                  pageNum.innerHTML = page; 
+                  } 
+                  
+                  //总共页数 
+                  function pageCount(){ 
+                  return Math.ceil(numberRowsInTable/pageSize); 
+                  } 
+                  //显示链接 
+                  function preLink(){ 
+                  spanPre.innerHTML = "<a href='javascript:pre();'>上一页</a>"; 
+                  } 
+                  function preText(){ 
+                  spanPre.innerHTML = "上一页"; 
+                  } 
+                  function nextLink(){ 
+                  spanNext.innerHTML = "<a href='javascript:next();'>下一页</a>"; 
+                  } 
+                  function nextText(){ 
+                  spanNext.innerHTML = "下一页"; 
+                  } 
+                  function firstLink(){ 
+                  spanFirst.innerHTML = "<a href='javascript:first();'>首页</a>"; 
+                  } 
+                  function firstText(){ 
+                  spanFirst.innerHTML = "首页"; 
+                  } 
+                  function lastLink(){ 
+                  spanLast.innerHTML = "<a href='javascript:last();'>末页</a>"; 
+                  } 
+                  function lastText(){ 
+                  spanLast.innerHTML = "末页"; 
+                  } 
+                  
+                  //隐藏 
+                  function hide(){ 
+                  for ( var i = pageSize; i<numberRowsInTable; i++ ){ 
+                  theUL.getElementsByTagName("li")[i].style.display = 'none'; 
+                  } 
+                  totalPage.innerHTML = pageCount(); 
+                  pageNum.innerHTML = '1'; 
+                  nextLink(); 
+                  lastLink(); 
+                  } 
+                  hide(); 
+
+
+                </script> 
                   </p>
                 </div>
               </div>
